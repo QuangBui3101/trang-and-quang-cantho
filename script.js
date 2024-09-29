@@ -3,12 +3,23 @@ inputText = document.getElementById("NameInput")
 nameSpan = document.getElementById("Name")
 btnProceed = document.getElementById("proceed")
 invitationView = document.getElementById("Invitation")
-
-btnProceed.addEventListener('click', function() {
-    navigator.virtualKeyboard.hide()
+section4 = document.getElementById('section4')
+function showInvititation() {
     invitationView.classList.toggle('d-none')
     inputbox.classList.toggle('d-none')
+    document.getElementById('section4').scrollIntoView()
     nameSpan.textContent = inputText.value
+}
+inputText.addEventListener('keydown', function (e) {
+    if (e.key === 'Enter') {
+        showInvititation()
+    }
+}, false);
+
+
+
+btnProceed.addEventListener('click', function() {
+    showInvititation()
 }, false)
 btnBack = document.getElementById('goback')
 btnBack.addEventListener('click', function() {
@@ -27,6 +38,6 @@ var options = {
     jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
 };
 
-btnSave.addEventListener('click', function() {
-    html2pdf(invitationView, options)
-}, false)
+// btnSave.addEventListener('click', function() {
+//     html2pdf(invitationView, options)
+// }, false)
