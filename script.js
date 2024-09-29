@@ -5,6 +5,7 @@ btnProceed = document.getElementById("proceed")
 invitationView = document.getElementById("Invitation")
 
 btnProceed.addEventListener('click', function() {
+    navigator.virtualKeyboard.hide()
     invitationView.classList.toggle('d-none')
     inputbox.classList.toggle('d-none')
     nameSpan.textContent = inputText.value
