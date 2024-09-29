@@ -1,0 +1,145 @@
+<html>
+
+<head>
+    <title>Pre-Wedding Party</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/palette.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Grey+Qo&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Grey+Qo&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Dancing+Script:wght@400..700&family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Grey+Qo&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+        integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body style="overflow-y: auto; max-height: 100vh;">
+
+    <div id="section1" class="d-flex align-items-center section justify-content-center">
+        <!-- <h1 class="title">Wedding shower</h1> -->
+        <!-- <h1 class="text-center">From Nha Trang and Nhat Quang</h1> -->
+        <img class="banner-image" style="filter: brightness(0.85);" src="Images/grass-design.jpg" />
+        <!-- <h1>Presenting to you:</h1> -->
+        <!-- <div class="mask"></div> -->
+    </div>
+    <div id="section2" class="d-flex section align-items-center justify-content-center">
+        <!-- <h1 class="text-center">A love story for the ages</h1> -->
+        <div class="position-relative d-inline-block align-self-center">
+            <img class="banner-image d-block" src="Images/rapsfield.JPG" />
+            <!-- <img class="calendar position-absolute" src="Images/Calendar 14.png" /> -->
+            <div class="position-absolute w-100 content-text" style="top: 44%;">
+                <!-- <img src="Images/Crayon background.png" class="w-100 position-absolute" style="filter: saturate(1500);"/> -->
+                <div class="mx-5 d-flex flex-column align-items-center position-relative"
+                    style="background-color: #ffffffab; padding: 2.5em 1em">
+                    <p class="text-center">Let's dress up and come celebrate love before our big day</p>
+                    <p class="text-center">Please help us fill the form below!!!</p>
+                    <div class="d-flex">
+                        <img src="Images/palette.svg" style="width: 50px; height: auto;" />
+                        <p class="mx-1" style="font-size: 11pt;">Dresscodes: beige, pink, brown</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="section3" class="d-flex justify-content-center section">
+        
+    </div> -->
+    <div id="section4" class="d-flex justify-content-center section">
+        <div id="InputBox" class="d-flex flex-column align-self-center" style="gap: 1em;">
+            <div>
+                <span>Your name:</span>
+                <input id="NameInput" type="text" />
+            </div>
+            <button id="proceed" class="d-block align-self-center">Proceed</button>
+        </div>
+        <div id="Invitation" class="d-flex flex-column justify-content-center d-none"
+            style="text-align: center; font-family: 'Playwrite DE Grund', cursive; color: #6b1e1b; background-color: #fbf5ec; margin: 5em 0.5em;line-height: 2em;font-size: 0.8em;">
+            <div>
+                <img src="Images/WithLove.png" style="max-width: 80%;" />
+                <div>
+                    <span>Trân trọng kính mời</span>
+                    <span id="Name">"Name"</span>
+                </div>
+                <div>đến dự buổi tiệc thân mật cùng gia đình</div>
+                <div class="d-flex justify-content-center"
+                    style="align-items: center; font-family: 'Playfair Display', serif; font-size: 20px;">
+                    <div style="width: 30%;font-weight: bold;">Lúc 11:30 THỨ BẢY</div>
+                    <div
+                        style="width: 30%;font-weight: bold;border-left: solid 2px #6b1e1b;border-right: solid 2px #6b1e1b;font-size: 70px;line-height: 90px;font-style: italic;padding-bottom: 10px;">
+                        19</div>
+                    <div style="width: 30%;font-weight: bold;">THÁNG 10 NĂM 2024</div>
+                </div>
+                <div style="font-style: italic;">(Nhằm ngày 17 tháng 09 năm Giáp Thìn)</div>
+                <div>TẠI TRUNG TAM TỔ CHỨC SỰ KIỆN & TIỆC CƯỚI</div>
+                <div style="font-weight: bold;font-size: 25px; margin: 10px 0;">VẠN PHÁT RIVERSIDE</div>
+                <div style="font-weight: bold;font-style: italic;">
+                    <div>Sảnh 8</div>
+                    <div>02 Nguyễn Văn Cừ (Cồn Khương)</div>
+                    <div>P.Cái Khế, Q. Ninh Kiều, TP. Cần Thơ</div>
+                </div>
+                <div class="d-flex justify-content-center" style="font-weight: bold;gap: 1em">
+                    <div>Đón khách 10:30</div>
+                    <div style="border-right: 1px solid #6b1e1b;"></div>
+                    <div>Nhập tiệc 11:30</div>
+                </div>
+            </div>
+            <button id="goback" class="align-self-center">Back</button>
+        </div>
+    </div>
+    <button id="save">Save as PDF</button>
+
+    <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeTprZqr3rlWmwJ7iAAJm9_y_Tf03vdLljDSknQsGMd107SPg/viewform?embedded=true" frameborder="0" class="frame-content" allowfullscreen>Loading…</iframe> -->
+    </div>
+    <div class="footer">
+        <div class="d-flex flex-column align-items-center">
+            <p>Designed by: Trang & Quang</p>
+            <p>Copyright © 2024</p>
+        </div>
+    </div>
+    <!-- <button id="summary" class="position-fixed bottom-0 end-0 m-4 btn" style="background-color: #ffffffab;">Event summary</button>
+    <div class="position-fixed top-0 start-0 h-100 w-100 summary p-4 hidden" style="background-color: #000000ab;">
+        <div class="position-absolute h-100 w-100 close under"></div>
+        <div class="p-3" style="background-color: white; border-radius: 10px;">
+            <h1>Event in a nutshell</h1>
+            <p>Date: 14.09.2024</p>
+            <ol>
+                <li>
+                    <p>Painting & Wine tasting</p>
+                    <p>Time: 3-5PM</p>
+                    
+                    <p><a href="https://www.google.com/maps/place/Entkorkte+Kunst+-+Frankfurt/@50.1372803,8.6430294,17z/data=!3m1!4b1!4m6!3m5!1s0x47bd0762e2b94d1f:0x25d4f528cb059a80!8m2!3d50.1372803!4d8.6456097!16s%2Fg%2F11j2zh9vdt?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D" target="_blank">Entkorkte Kunst</a><br/>
+                        Ginnheimer Landstraße 109a<br/>
+                        60431 Frankfurt am Main</p>
+                </li>
+                <li>
+                    <p>Laser Tag</p>
+                    <p>Time: 7-9PM</p>
+                    <p><a href="https://www.google.com/maps/place/LaserZone+LaserTag+Frankfurt/@50.120131,8.6787861,14.22z/data=!4m14!1m7!3m6!1s0x47bd0e4e34dd1e6d:0x5c7089ac27f9670e!2sLaserZone+LaserTag+Frankfurt!8m2!3d50.1352317!4d8.7432135!16s%2Fg%2F1s04dr5x_!3m5!1s0x47bd0e4e34dd1e6d:0x5c7089ac27f9670e!8m2!3d50.1352317!4d8.7432135!16s%2Fg%2F1s04dr5x_?entry=ttu&g_ep=EgoyMDI0MDgyMC4xIKXMDSoASAFQAw%3D%3D" target="_blank">LaserZone</a><br/>
+                        Borsigallee 18<br/>
+                        60388 Frankfurt am Main</p>
+                </li>
+            </ol>
+            <button class="position-fixed top-0 end-0 m-4 btn p-3 bi bi-x-circle-fill close" style="border-radius: 100px; "></button>
+        </div>
+    </div> -->
+</body>
+
+</html>
