@@ -5,10 +5,13 @@ btnProceed = document.getElementById("proceed")
 invitationView = document.getElementById("Invitation")
 section4 = document.getElementById('section4')
 function showInvititation() {
+    nameSpan.textContent = inputText.value
     invitationView.classList.toggle('d-none')
     inputbox.classList.toggle('d-none')
-    document.getElementById('section4').scrollIntoView()
-    nameSpan.textContent = inputText.value
+    setTimeout(function(){
+        //do what you need here
+        document.getElementById('section4').scrollIntoView()
+    }, 200);
 }
 inputText.addEventListener('keydown', function (e) {
     if (e.key === 'Enter') {
